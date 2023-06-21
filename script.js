@@ -30,7 +30,7 @@
 // // //         case "Gol 1.6":
 // // //             pre.innerText = "R$48.000,00"
 // // //             break;
-        
+
 // // //         case "Saveiro 1.8":
 // // //             pre.innerText = "R$56.500,00"
 // // //             break;
@@ -71,5 +71,39 @@
 // }
 
 function motivacao() {
-    let num = document.getElementById("numero")
+    let num = document.getElementById("numero").value
+    let div = document.querySelector(".image-box")
+    let imagem = document.createElement("img")
+    let mensagem = document.querySelector(".mensagem")
+
+    switch (num) {
+        case "1":
+            imagem.src = 'abraco.jpeg'
+            mensagem.innerText = ''
+            break
+
+        case "2":
+            imagem.src = ''
+            mensagem.innerText = ''
+            break
+
+        case "3":
+            imagem.src = ''
+            mensagem.innerText = ''
+            break
+
+        case "4":
+            imagem.src = ''
+            mensagem.innerText = ''
+            break
+
+        case "5":
+            imagem.src = ''
+            mensagem.innerText = ''
+            break
+
+    }
+    
+    div.innerHTML = ''
+    div.appendChild(imagem)
 }
