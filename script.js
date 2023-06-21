@@ -69,3 +69,7 @@
 
 //     alert(`Você já viveu ${calculoa} anos, ${calculom} e ${calculod}.`)
 // }
+
+function motivacao() {
+    let num = document.getElementById("numero")
+}
